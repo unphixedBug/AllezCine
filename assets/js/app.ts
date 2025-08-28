@@ -15,3 +15,18 @@ async function testAPI() {
 }
 
 testAPI();
+
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const closeBtn = document.getElementById("closeBtn");
+const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+
+const toggleMobileMenu = () => {
+  mobileMenuOverlay?.classList.toggle("active");
+};
+
+const closeMobileMenu = () => {
+  mobileMenuOverlay?.classList.remove("active");
+};
+
+hamburgerBtn?.addEventListener("click", toggleMobileMenu);
+closeBtn?.addEventListener("click", toggleMobileMenu);

@@ -5,6 +5,12 @@ $seaFoam: #55ecee;
 $midnight: #404041;
 $gravel: #9b9893;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: $lightCream;
   color: white;
@@ -13,4 +19,86 @@ body {
     font-size: 2rem;
     margin: 1rem 0;
   }
+}
+
+.navbar-mobile {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $midnight;
+
+  p {
+    color: $sunset;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $sunset;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+}
+
+.mobile-menu-overlay {
+  border: 1px solid red;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $midnight;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  .menu-list {
+    list-style: none;
+    padding: 1rem 0;
+
+    li {
+      padding: 0.8rem 1rem;
+
+      a {
+        text-decoration: none;
+        color: $lightCream;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.navbar-desktop {
+  display: none;
 }
