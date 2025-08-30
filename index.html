@@ -13,26 +13,119 @@
         <span></span><span></span><span></span>
       </button>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu" id="mobileMenu">
         <ul class="menu-list">
-          <li><a href="">Accueil</a></li>
-          <li><a href="">Favoris</a></li>
-          <li><a href="">Paramètres</a></li>
-          <li><a href="">Profil</a></li>
+          <li>
+            <a href=""
+              ><img src="./assets/icones/accueil.png" alt="" />Accueil</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./assets/icones/favoris.png" alt="" />Favoris</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./assets/icones/paramètres.png" alt="" />Paramètres</a
+            >
+          </li>
+          <li>
+            <a href=""><img src="./assets/icones/profil.png" alt="" />Profil</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <nav class="navbar navbar-desktop">
-      <div class="sidebar">
-        <ul class="menu-list">
-          <li><a href="">Accueil</a></li>
-          <li><a href="">Favoris</a></li>
-          <li><a href="">Paramètres</a></li>
-          <li><a href="">Profil</a></li>
-        </ul>
-      </div>
+    <nav class="sidebar">
+      <ul>
+        <li>
+          <a href=""
+            ><img src="./assets/icones/accueil.png" alt="" /><span
+              >Accueil</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img src="./assets/icones/favoris.png" alt="" /><span
+              >Favoris</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img src="./assets/icones/paramètres.png" alt="" /><span
+              >Paramètres</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img src="./assets/icones/profil.png" alt="" /><span
+              >Profil</span
+            ></a
+          >
+        </li>
+      </ul>
     </nav>
+
+    <main>
+      <section class="hero-carousel">
+        <div class="carousel-container">
+          <div class="carousel-slides">
+            <div class="carousel-slide active">
+              <img
+                src="https://grignoux.be/upload/grignoux/films/2460/le_robot_sauvage_affiche.jpg"
+                alt=""
+              />
+              <div class="slide-content">
+                <h2>Blockbuster</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://fr.web.img2.acsta.net/pictures/14/08/21/18/15/224397.jpg"
+                alt=""
+              />
+              <div class="slide-content">
+                <h2>Drama</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10000720_p_v8_ap.jpg"
+                alt=""
+              />
+              <div class="slide-content">
+                <h2>Action</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="prev-btn" id="prevBtn"><</button>
+          <button class="next-btn" id="nextBtn">></button>
+
+          <div class="carousel-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
